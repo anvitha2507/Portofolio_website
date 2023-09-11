@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type='text/css'>
+        /* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color:black;
+}
+
+.hero{
+    background-color:skyblue;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+nav  {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:skyblue;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color:white;
+    font-size: 50px;
+    letter-spacing: 5px;
+    cursor:pointer;
+
+
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #333;
+    transition: 0.4s;
+}
+.btn{
+    background-color: #333;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+
+section {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.about{
+    text-align: left;
+    text-decoration: none;
+}
+h4{
+    color:white;
+    margin: 20px 0px 20px;
+    font-size: 65 px;
+
+}
+h2{
+    color:white;
+    margin: 20px 0px 20px;
+    font-size: 75 px;
+    font-weight: bold;
+}
+h6{
+    color:white;
+    font-size: 30 px;
+    font-style: oblique; 
+}
+
+.project {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+}
+h3{
+    color:black;
+    margin: 20px 0px 20px;
+    font-size: 50 px;
+    text-decoration: solid;
+    text-decoration: underline;
+}
+p{
+    color:black;
+    text-align: left;
+    font-size: 20px;
+
+}
+img {
+    display: block; /* Make the image a block-level element */
+    margin: 0 auto; /* Center-align horizontally */
+}
+.contact {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    align-items: center;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color:white;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+form label, form textarea, form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+
+}
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+}
+button[type="submit"]:hover {
+    background-color: black;
+}
+
+/* Add more specific styling as needed */
+
+    </style>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 calss="logo">Portfolio</h2>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+        </nav>
+        
+        
+    </div>
+    
+    <section id="about">
+        <h4>Hello, my name is</h4>
+        <h2> Anvitha Karnatakam</h2>
+        <h6>Welcome to my protofolio. I am artificial intelligence and Machine Learning Enthusiast.</h6>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="images/text-to-handwriting.png" alt="Project 1">
+            <h3>Text to handwriting</h3>
+            <p>The proposed model text to handwriting 
+                converter is based on various leading approaches like deep Generative advesial neural networks
+                They use these approaches to
+                create digital representations of handwriting, mimicking the 
+                unique characteristics of human handwriting such as spacing
+                between letters, the thickness of strokes, and the slant of 
+                letters. </p>
+        </div>
+        <div class="project">
+            <img src="images/health.jpg" alt="Project 2">
+            <h3>Multiple Disease Diagnoiser</h3>
+            <p>This model is 7 in 1 disease diagnose model. this can diagnoise alzheimer, Brain Tumour, Diabetes, Heart Attack, Breast Cancer,
+                covid,Pneumonia by x-rays and some reports values.
+            </p>
+        </div>
+        <div class="project">
+            <img src="images/brain.jpg" alt="Project 3">
+            <h3>Brain Tumor Segmentation</h3>
+            <p>This model can classify whether the person has brain tumor or not using MRI scan reports and then segment the part of tumor in brain which helps to diagnoise the tumor easily.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
